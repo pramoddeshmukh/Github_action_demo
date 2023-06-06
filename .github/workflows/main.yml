@@ -11,6 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@main
     - uses: pramoddeshmukh/Github_action_demo@main
+    - uses: ./.github/actions/setup-composite
       with:
         args: --acl public-read --follow-symlinks --delete --exclude '.git*/*'
       env:
