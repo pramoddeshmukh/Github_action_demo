@@ -9,8 +9,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - uses: pramoddeshmukh/Github_action_demo@master
+    - uses: actions/checkout@main
+    - uses: pramoddeshmukh/Github_action_demo@main
       with:
         args: --acl public-read --follow-symlinks --delete --exclude '.git*/*'
       env:
